@@ -1,0 +1,10 @@
+<h1>Episode Number <%= @episode.number %></h1>
+<h2><%= "#{@episode.date.strftime("%B %d, %Y")}"%></h2>
+<br>
+</br>
+<p>Guests:</p>
+<ul>
+  <% @episode.guests.each do |guest| %>
+    <li><%= guest.name %></li>
+  <% end %>
+</ul>
